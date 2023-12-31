@@ -1,38 +1,53 @@
-.App {
-  text-align: center;
+body{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mega-numeros{
+  display: flex;
+  flex-wrap: wrap;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.mega-sena{
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;  
 }
-
-.App-link {
-  color: #61dafb;
+.display-mega{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: #222;
+  color: #fff;
+  font-size: 2rem;
+  margin: 20px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn{
+  background-color: #D44D5C;
+  padding: 8px;
+  border: none;
+  color: #fff;
+  font-weight: 700;
+  transition: all 300ms;
+}
+.btn:hover{
+  background-color: #f84a5e;
+}
+.btn:active{
+  transform: scale(.9);
+}
+input{
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid #D44D5C;
+}
+input:focus{
+  border: none;
+  border-bottom: 1px solid #D44D5C;
+  outline: none;
 }
